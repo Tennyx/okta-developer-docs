@@ -70,6 +70,7 @@ export default {
     Reference: () => import('../components/Reference.vue'),
     Quickstart: () => import('../components/Quickstart.vue'),
     Pricing: () => import('../components/Pricing.vue'),
+    Search: () => import('../components/Search.redesign.vue'),
   },
   data() {
     return {
