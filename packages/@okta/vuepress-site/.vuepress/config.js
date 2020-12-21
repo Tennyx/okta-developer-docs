@@ -10,8 +10,8 @@ module.exports = {
    * Custom head elements here
    */
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://static.cloud.coveo.com/searchui/v2.7968/10/css/CoveoFullSearch.min.css', integrity: 'sha512-tfvkdC1he/nwwFbCfPfFYa7PlN9aX+CEmmceZIQ8MHhgKAaW+CNnNaVSLTGc+Wsxmcz8Rj1vbLWguGG4JCuPGw==', crossorigin: 'anonymous' }],
-    ['script', { class: 'coveo-script', src: 'https://static.cloud.coveo.com/searchui/v2.7968/10/js/CoveoJsSearch.Lazy.min.js', integrity: 'sha512-xjeJNDVvl2ZWpD6SzRVeOHSERJX/ord4BENDzd83KxlD5r1/JgxmwtAyw/nr5yIDuwA/NvU/hYBMtLsCpdFCcQ==', crossorigin: 'anonymous', defer: true}],
+    ['link', { rel: 'stylesheet', href: 'https://static.cloud.coveo.com/searchui/v2.10081/5/css/CoveoFullSearch.min.css', integrity: 'sha512-c6ZA0d3XVIG36GHJHX+TRBINlF4+k4cDAngeqQmWzEcPys5FWvLCD/IVaUJsdmNchM+4YuCcYpaXsNsb2B8bWQ==', crossorigin: 'anonymous' }],
+    ['script', { class: 'coveo-script', src: 'https://static.cloud.coveo.com/searchui/v2.10081/5/js/CoveoJsSearch.Lazy.min.js', integrity: 'sha512-aKXBnyJH8xK97jTYJdm/m9pzV3zdU/r0DszRAhgcipp8cY68vrFy+yKdw/5NsuV6MLQpgjM88WtURJZ7MFcvkQ==', crossorigin: 'anonymous', defer: true}],
     ['link', { rel: 'apple-touch-icon', sizes:'180x180', href: '/favicon/apple-touch-icon.png' }],
     ['link', { rel: 'icon', type:"image/png", sizes:"32x32",  href: '/favicon/favicon-32x32.png' }],
     ['link', { rel: 'icon', type:"image/png", sizes:"16x16",  href: '/favicon/favicon-16x16.png' }],
