@@ -1,5 +1,5 @@
 <template>
-  <div class="search--wrapper" >
+  <div class="search--wrapper">
     <div class="SearchBox" data-search-bar data-pipeline="developer-okta-com">
       <div class="CoveoOmnibox"></div>
       <div class="CoveoAnalytics"></div>
@@ -9,10 +9,9 @@
 </template>
 
 <script>
-import { initSearchBar } from "../util/coveo/init";
 export default {
   mounted() {
-    initSearchBar();
+    import("../util/coveo/init").then(({ initSearchBar }) => initSearchBar());
   }
 };
 </script>

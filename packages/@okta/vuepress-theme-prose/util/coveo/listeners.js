@@ -25,7 +25,7 @@ const _registerFacetListener = rootElement => {
   };
 
   // Select all facets.
-  if (config.isSearchPage) {
+  if (selectAllFacetButton) {
     Coveo.$$(selectAllFacetButton).on("click", function(event) {
       event.preventDefault();
       selectAll();

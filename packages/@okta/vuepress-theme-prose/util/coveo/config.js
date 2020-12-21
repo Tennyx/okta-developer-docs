@@ -28,9 +28,9 @@ export default {
   pagerConfig: {
     numberOfPages: numberOfPages()
   },
-  isSearchPage: (() => {
-    return location.pathname === "/search/";
-  })()
+  isSearchPage: () => {
+    return window.location.pathname === "/search/";
+  }
 };
 
 function numberOfPages() {

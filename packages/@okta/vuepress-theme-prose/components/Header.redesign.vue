@@ -40,7 +40,6 @@
 </template>
 
 <script>
-import config from "../util/coveo/config";
 export default {
   components: {
     MenuItems: () => import("../components/MenuItems.vue"),
@@ -49,17 +48,14 @@ export default {
   },
   data() {
     return {
+      isSearchPage: false,
       searchOpened: false,
       menuOpened: false
     };
   },
-  computed: {
-    isSearchPage() {
-      return config.isSearchPage;
-    }
-  },
   mounted() {
     window.addEventListener("resize", this.handleResize);
+    this.isSearchPage = window.location.pathname === "/search/";
   },
   methods: {
     toggleSearch: function() {

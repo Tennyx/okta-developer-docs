@@ -4,7 +4,7 @@ import registerTemplates from "./templates";
 import registerListeners from "./listeners";
 
 export const initSearchBar = async () => {
-  if (!config.isSearchPage) {
+  if (!config.isSearchPage()) {
     const rootElement = document.querySelector("[data-search-bar]");
 
     await configureCoveoEndpoint();
@@ -19,7 +19,7 @@ export const initSearchBar = async () => {
 };
 
 export const initSearchPage = async () => {
-  if (config.isSearchPage) {
+  if (config.isSearchPage()) {
     const rootElement = document.querySelector("[data-search-page]");
     const searchBar = document.querySelector("[data-search-bar]");
 

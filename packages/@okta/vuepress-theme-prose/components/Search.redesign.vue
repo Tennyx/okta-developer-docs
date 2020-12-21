@@ -101,7 +101,6 @@
                 </div>
               </div>
             </script>
-
           </div>
           <div class="CoveoPager"></div>
           <div class="coveo-facet-help show--small">
@@ -139,11 +138,12 @@
 </template>
 
 <script>
-import { initSearchPage } from "../util/coveo/init";
 export default {
   mounted() {
-    window.addEventListener("load", function(event) {
-      initSearchPage();
+    import("../util/coveo/init").then(({ initSearchPage }) => {
+      window.addEventListener("load", function(event) {
+        initSearchPage();
+      });
     });
   }
 };
